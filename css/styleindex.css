@@ -1,0 +1,15 @@
+header{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+}
+
+main{
+    background: var(--gradiente1) no-repeat;
+    color: white;
+    height: 90vh;
+}
+
+.fundo_home{
+    background-image: url("/assets/imgHome.png");
+}
