@@ -4,6 +4,7 @@
 :root {
     --gradiente1: radial-gradient(14.71% 28.47% at 80% 60.42%, #071D3C 0%, #020202 100%);
     --azul: #044194;
+    --input-opacidade: #1f1f1f28;
 }
 
 * {
