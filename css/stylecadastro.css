@@ -2,6 +2,7 @@ body {
     background-image: url(../assets/background-login.png);
     position: fixed;
     background-repeat: no-repeat;
+    background-size: cover;
     overflow: hidden;
     font-family: "Tomorrow";
 
@@ -21,7 +22,7 @@ body {
 
 .corpo-login {
     background-color: var(--input-opacidade);
-    width: 30vw;
+    width: 37vw;
     height: 100vh;
     border-right: 2.5px solid #575757;
     border-left: 2.5px solid #575757;
@@ -32,7 +33,7 @@ body {
 
 .titulo {
     color: white;
-    font-size: 50px;
+    font-size: 45px;
     margin-bottom: 7vh;
 }
 
@@ -45,13 +46,16 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
 
+.corpo-inputs input:focus {
+    outline: none;
 }
 
 .nome {
     background-color: transparent;
     border: none;
-    border-bottom: 2.5px solid white;
+    border-bottom: 2px solid white;
     padding: 10px;
     width: 70%;
     height: 5vh;
@@ -63,7 +67,7 @@ body {
 .email {
     background-color: transparent;
     border: none;
-    border-bottom: 2.5px solid white;
+    border-bottom: 2px solid white;
     padding: 10px;
     width: 70%;
     height: 5vh;
@@ -75,7 +79,7 @@ body {
 .senha {
     background-color: transparent;
     border: none;
-    border-bottom: 2.5px solid white;
+    border-bottom: 2px solid white;
     padding: 10px;
     width: 70%;
     height: 5vh;
@@ -100,17 +104,21 @@ body {
     color: white;
     font-family: "Tomorrow";
     margin-bottom: 5vh;
+    transition: 0.7s;
 }
 
 .botao-cadastrar:hover {
     background-color: #7c7c7c;
-    transition: 0.8s;
     cursor: pointer;
 }
 
 .span-cadastrar {
     color: #6b6b6b;
     font-size: 15px;
+}
+
+.span-cadastrar a{
+    text-decoration: none;
 }
 
 .link-cadastrar {
