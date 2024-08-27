@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/stylecadastro.css">
+    <script src="../js/cadastro.js"></script>
+    <script src="../js/links.js"></script>
     <title>Login</title>
 </head>
 
@@ -17,18 +19,18 @@
 
             <div class="corpo-inputs">
                 <span class="titulo-input">Nome</span>
-                <input type="text" class="nome">
+                <input type="text" class="nome" id="input_nome">
 
                 <span class="titulo-input">Email</span>
-                <input type="email" class="email">
+                <input type="email" class="email" id="input_email">
 
                 <span class="titulo-input">Senha</span>
-                <input type="password" class="senha">
+                <input type="password" class="senha" id="input_senha">
 
                 <span class="titulo-input">Confirme sua senha</span>
-                <input type="password" class="senha">
+                <input type="password" class="senha" id="input_confirmacao">
 
-                <button class="botao-cadastrar">Cadastrar</button>
+                <button class="botao-cadastrar" onclick="validarInputs()">Cadastrar</button>
 
                 <span class="span-cadastrar">Já possui uma conta?<a href="login.html"
                         class="link-cadastrar">Entrar</a></span>
