@@ -3,12 +3,16 @@
 
 :root {
     --gradiente1: radial-gradient(14.71% 28.47% at 80% 60.42%, #071D3C 0%, #020202 100%);
-    --azul: #044194;
     --input-opacidade: #1f1f1f28;
+    --gradiente2: radial-gradient(55.16% 67.29% at 65.42% 54.91%, #071D3C 0%, #051223 42.53%, #000000 100%);
+    --gradiente3: radial-gradient(51.44% 112.99% at 52.27% 98.24%, #0D3266 0%, #051223 42.53%, #000000 100%);
+    --gradiente4: radial-gradient(51.44% 112.99% at 52.27% 98.24%, #0D3266 0%, #051223 42.53%, #000000 100%);
+
 }
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
