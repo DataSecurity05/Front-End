@@ -9,3 +9,7 @@ function irParaLogin() {
 function ia() {
     window.location.href = '#inteligenciaArtificial';
 }
+
+function irGit(){
+    window.location.href = 'https://github.com/DataSecurity05/SiteInstitucional';
+}

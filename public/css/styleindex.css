@@ -100,7 +100,6 @@ header nav a{
 }
 
 #servicos {
-    padding-top: 5%;
     background: var(--gradiente2);
     display: flex;
     justify-content: center;
@@ -179,7 +178,7 @@ header nav a{
 }
 
 .conteudo_inteligencia img{
-    width: 600px;
+    width: 650px;
     justify-content: flex-end;
     padding: 0 5%;
 }
@@ -416,6 +415,7 @@ footer{
 
 .redes img{
     width: 70px;
+    cursor: pointer;
 }
 
 footer .direito {
