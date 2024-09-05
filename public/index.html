@@ -37,7 +37,7 @@
                     </div>
                     <div class="frase_home">
                         <span>Analise de dados com tecnologia de IA</span><button class="btn" onclick="ia()">Saiba mais
-                            <img src="assets/icon-seta.png"></button>
+                            <img src="assets/icon-seta.png"></button><br>
                     </div>
                 </div>
             </div>
@@ -54,7 +54,7 @@
                                 realiza análises detalhadas em segundos, permitindo decisões rápidas e baseadas em
                                 dados. Otimize processos e resultados com a velocidade e precisão que só nossas soluções
                                 oferecem.</div>
-                            <div><img src="" alt=""></div>
+                            <div class="icon_detalhes"><img src="assets/icon-analise.png"></div>
                         </div>
                     </div>
                     <div class="detalhe">
@@ -65,7 +65,7 @@
                                 em gráficos intuitivos, facilitando a interpretação dos resultados. Com dashboards
                                 personalizáveis, acompanhe métricas essenciais e identifique tendências para uma
                                 estratégia mais assertiva.</div>
-                            <div><img src="" alt=""></div>
+                            <div class="icon_detalhes"><img src="assets/icon-visualizacao.png"></div>
                         </div>
                     </div>
                     <div class="detalhe">
@@ -77,7 +77,7 @@
                                 adaptar rapidamente às mudanças do mercado e tomar decisões mais inteligentes e
                                 eficazes.
                             </div>
-                            <div><img src="" alt=""></div>
+                            <div class="icon_detalhes"><img src="assets/icon-solucoes.png"></div>
                         </div>
                     </div>
                 </div>
@@ -96,31 +96,25 @@
             <p class="titulos">Inteligência Artificial <img src="assets/icon_seta_baixo.png" class="setaBaixo"></p>
             <div class="conteudo_inteligencia">
                 <div class="inteligencia_esquerdo">
-                    <p>A Inteligência Artificial (IA) é uma tecnologia que simula a capacidade humana de pensar,
-                        aprender e tomar decisões. Aplicada ao mundo dos negócios, a IA analisa grandes volumes de dados
-                        em tempo real, identifica padrões e oferece soluções otimizadas para desafios complexos. Com a
-                        IA, empresas podem automatizar processos, melhorar a eficiência e criar estratégias baseadas em
+                    <p>A Inteligência Artificial (IA) simula a capacidade humana de pensar, aprender e tomar decisões.
+                        Ela analisa grandes volumes de dados em tempo real, identifica padrões e oferece soluções
+                        otimizadas. Empresas podem automatizar processos e melhorar a eficiência com IA, baseando-se em
                         dados concretos.</p>
-                    <p>A IA transforma a forma como as empresas tratam e utilizam seus dados. Ao automatizar a análise
-                        de dados, a IA permite que sua empresa tome decisões mais rápidas e precisas. Ela ajuda a
-                        identificar oportunidades de mercado, prever tendências e personalizar ofertas para seus
-                        clientes, aumentando a competitividade e a eficiência operacional.</p>
+                    <p>A IA automatiza a análise de dados, permitindo decisões rápidas e precisas. Ela identifica
+                        oportunidades, prevê tendências e personaliza ofertas, aumentando a competitividade e eficiência
+                        das empresas.</p>
                 </div>
                 <img src="assets/imagem_ia.png" alt="imagem de um robô - gerado por ia">
                 <div class="inteligencia_direito">
                     <h3>Sense AI</h3><br>
-                    <p>A Sense IA é a nossa inteligência artificial projetada para transformar a forma como sua empresa
-                        opera. Com a Sense IA, você terá uma análise preditiva robusta que permite antecipar tendências
-                        de mercado e responder rapidamente às mudanças. Além disso, ela automatiza processos complexos,
-                        liberando tempo para sua equipe focar em tarefas estratégicas. A Sense IA também personaliza
-                        interações com clientes, garantindo uma experiência única e eficiente. Em resumo, a Sense IA é o
-                        motor que impulsiona a inovação e a eficiência na sua empresa, adaptando-se continuamente às
-                        suas necessidades.</span>
+                    <p>A Sense IA transforma a operação da sua empresa com análise preditiva, permitindo antecipar
+                        tendências e automatizar processos complexos. Ela personaliza interações com clientes,
+                        proporcionando eficiência e inovação contínua, adaptando-se às suas necessidades.</p>
                 </div>
             </div>
         </div>
         <div id="sobre">
-            <p class="titulos">Sobre Nós <img src="assets/icon_seta_baixo.png" class="setaBaixo"></p>
+            <p class="titulos titulo_sobre">Sobre Nós <img src="assets/icon_seta_baixo.png" class="setaBaixo"></p>
             <div class="conteudo_sobre">
                 <div class="sobre_esquerdo">
                     <div>
@@ -147,9 +141,10 @@
                 </div>
                 <div class="sobre_direito">
                     <h3>Nossas ferramentas:</h3>
-                    <div class="img_sobre"><img src="assets/aws.png" alt="aws"></div>
-                    <p>Amazon Web Services (AWS) é uma plataforma de serviços em nuvem que oferece uma ampla gama de
-                        soluções, incluindo armazenamento, processamento e gerenciamento de dados. AWS é conhecida por
+                    <div class="img_sobre"><img id="carrosel-image" src="assets/aws.png"></div>
+                    <p id="carrosel-decricao">Amazon Web Services (AWS) é uma plataforma de serviços em nuvem que
+                        oferece uma ampla gama de soluções, incluindo armazenamento, processamento e gerenciamento de
+                        dados. AWS é conhecida por
                         sua escalabilidade, flexibilidade e segurança.</p>
                 </div>
             </div>
@@ -203,21 +198,22 @@
                     <div class="inputs">
                         <div class="parte_a_contato">
                             <div class="secao_input nome_input">
-                                <span class="titulo-input">Nome Completo</span>
+                                <span class="titulo_input">Nome Completo</span>
                                 <input class="input" type="text" placeholder="Insira seu nome aqui">
                             </div>
                             <div class="secao_input telefone_input">
-                                <span class="titulo-input">Telefone</span>
+                                <span class="titulo_input">Telefone</span>
                                 <input class="input" type="text" placeholder="Insira seu telefone aqui">
                             </div>
                         </div>
                         <div class="secao_input">
-                            <span class="titulo-input">Email</span>
+                            <span class="titulo_input">Email</span>
                             <input class="input input_email" type="text" placeholder="Insira seu email aqui">
                         </div>
                         <div class="secao_input">
-                            <span class="titulo-input">Mensagem</span>
-                            <input class="input input_mensagem" type="text" placeholder="Digite sua mensagem aqui">
+                            <span class="titulo_input">Mensagem</span>
+                            <textarea class="input input_mensagem" type="text"
+                                placeholder="Digite sua mensagem aqui"></textarea>
                         </div>
                     </div>
                     <button class="btn_contato">Enviar</button>
@@ -244,9 +240,9 @@
                     <span>
                         <h3>Sobre</h3>
                         <br>
-                        <a href="#quem_somos" class="button_rodape">Quem somos</a>
+                        <a href="#sobre" class="button_rodape">Quem somos</a>
                         <br>
-                        <a href="#projeto" class="button_rodape">Projeto</a>
+                        <a href="#inteligenciaArtificial" class="button_rodape">Sense Ia</a>
                         <br>
                     </span>
                 </div>
@@ -254,11 +250,12 @@
                 <div class="coluna3">
                     <span>
                         <h3>Nossas redes</h3>
-                        <br>
-                        <a href="#quem_somos" class="button_rodape">Quem somos</a>
-                        <br>
-                        <a href="#projeto" class="button_rodape">Projeto</a>
-                        <br>
+                        <div class="redes">
+                            <img src="assets/github.png">
+                            <img src="assets/youtube.png">
+                            <img src="assets/instagram.png">
+                            <img src="assets/facebook.png">
+                        </div>
                     </span>
                 </div>
             </div>
@@ -268,3 +265,44 @@
 </body>
 
 </html>
+
+<script>
+    const carrosel = [
+        {
+            img: "assets/aws.png",
+            decricao: "AWS é uma plataforma de serviços em nuvem conhecida por sua escalabilidade, flexibilidade e segurança, oferecendo soluções de armazenamento, processamento e gerenciamento de dados."
+        },
+        {
+            img: "assets/nodejs.png",
+            decricao: "Node.js é um ambiente de execução JavaScript para servidor, ideal para aplicações escaláveis e de alta performance, como APIs e microserviços."
+        },
+        {
+            img: "assets/mysql.png",
+            decricao: "MySQL é um sistema de banco de dados relacional popular por sua confiabilidade e fácil integração em soluções de nuvem."
+        },
+        {
+            img: "assets/github.png",
+            decricao: "GitHub é uma plataforma de hospedagem de código, usada para controle de versão e colaboração, com forte integração em pipelines de DevOps."
+        },
+        {
+            img: "assets/java.png",
+            decricao: "Java é uma linguagem de programação robusta e versátil, amplamente utilizada para desenvolver aplicações escaláveis e seguras em ambientes de nuvem."
+        }
+    ]
+
+    let contador = 0;
+
+
+    function mudarcarrosel() {
+        contador += 1;
+
+        if (contador >= carrosel.length) {
+            contador = 0;
+        }
+
+        document.getElementById('carrosel-image').src = carrosel[contador].img;
+        document.getElementById('carrosel-decricao').innerText = carrosel[contador].decricao;
+    }
+
+    setInterval(mudarcarrosel, 5000);
+</script>

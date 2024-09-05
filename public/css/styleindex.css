@@ -39,7 +39,7 @@ header nav a{
 
 #home {
     background: var(--gradiente1);
-    height: 92vh;
+    height: 95vh;
 }
 
 .img_home {
@@ -127,6 +127,17 @@ header nav a{
     font-size: 30px;
 }
 
+.icon_detalhes{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10px;
+}
+
+.icon_detalhes img{
+    width: 80px;
+}
+
 .titulo_detalhe{
     font-weight: bold;
 }
@@ -155,7 +166,7 @@ header nav a{
 
 #inteligenciaArtificial {
     background: var(--gradiente3);
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .conteudo_inteligencia {
@@ -168,7 +179,7 @@ header nav a{
 }
 
 .conteudo_inteligencia img{
-    width: 650px;
+    width: 600px;
     justify-content: flex-end;
     padding: 0 5%;
 }
@@ -192,6 +203,10 @@ header nav a{
 
 #sobre {
     background: var(--gradiente4);
+}
+
+.titulo_sobre{
+    padding-bottom: 0;
 }
 
 .conteudo_sobre{
@@ -248,7 +263,7 @@ header nav a{
 
 #contato{
     background-image: url("../assets/background-contato.png");
-    background-size: 100%;
+    background-size: 150%;
 }
 
 .conteudo_contato{
@@ -270,8 +285,7 @@ header nav a{
     margin-top: 20px;
     width: 360px;
     text-align: center;
-    font-size: 15px;
-    font-weight: 800;
+    font-size: 18px;
 }
 
 .contato_direito{
@@ -311,15 +325,17 @@ header nav a{
     flex-direction: column;
 }
 
-.titulo-input{
+.titulo_input{
     font-size: 20px;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
 }
 
 .input{
     background-color: var(--input-opacidade);
     border: none;
     border-bottom: 2px solid #575757;
+    font-family: "Tomorrow";
+    padding: 5px;
 }
     
 .nome_input, .telefone_input{
@@ -329,10 +345,6 @@ header nav a{
 .input_mensagem{
     height: 180px;
     border: 2px solid #575757;
-}
-
-.input_mensagem::placeholder{
-    text-align: start;
 }
 
 .btn_contato{
@@ -360,7 +372,7 @@ footer{
     width: 60%;
     display: flex;
     justify-content: space-around;
-    gap: 50px;
+    gap: 30px;
 }
 
 .logo_rodape {
@@ -375,7 +387,7 @@ footer{
 .coluna1 a {
     text-decoration: none;
     font-family: 'Inter', sans-serif;
-    font-size: 15px;
+    font-size: 18px;
     display: flex;
     justify-content: left;
 }
@@ -383,17 +395,27 @@ footer{
 .coluna2 a {
     text-decoration: none;
     font-family: 'Inter', sans-serif;
-    font-size: 15px;
+    font-size: 18px;
     display: flex;
     justify-content: left;
 }
 
-.coluna3 a {
-    text-decoration: none;
-    font-family: 'Inter', sans-serif;
-    font-size: 15px;
+.coluna3 span{
     display: flex;
-    justify-content: left;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.redes{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 5px;
+    padding-left: 0;
+}
+
+.redes img{
+    width: 70px;
 }
 
 footer .direito {
