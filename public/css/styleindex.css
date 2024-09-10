@@ -390,6 +390,31 @@ textarea{
 .btn_contato:hover{
     background-color: #006dda;
 }
+
+.implementar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    padding-bottom: 50px;
+    gap: 15px;
+    font-size: 30px;
+}
+
+.implementar a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.implementar span{
+    padding: 3px 12px;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    font-size: 32px;
+}
+
 #botao_topo {
     display: flex;
     align-items: center;
