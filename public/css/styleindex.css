@@ -656,6 +656,10 @@ footer p {
         padding-bottom: 15%;
     }
 
+    .implementar{
+        font-size: 20px;
+    }
+
     .colunas{
         width: 90%;
     }
