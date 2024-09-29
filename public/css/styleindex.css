@@ -48,6 +48,7 @@ body::-webkit-scrollbar {
     border: none;
   }
 
+  
 .menus {
     display: flex;
     text-decoration: none;
@@ -510,4 +511,276 @@ footer .direito {
 
 footer p {
     padding-bottom: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    html, body {
+        overflow-x: hidden;
+      }
+      
+    header{
+        padding: 50px 30px;
+    }
+
+    header img.logo1{
+        width: 40%;
+    }
+    header nav{
+        display: none;
+    }
+
+    #home{
+       height: 60vh;
+
+    }
+    .img_home {
+        background-size: cover;
+        font-size: 40px;
+        height: 60vh;
+    }
+
+    .frase_home {
+        font-size: 20px;
+        padding-top: 10%;
+        text-align: center;
+    }
+
+    .conteudo_detalhe {
+        padding: 12% 4%;
+        gap: 20px;
+    }
+
+    .detalhe_servico {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .icon_detalhes img {
+        width: 50px;
+    }
+
+    .categorias {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        padding-bottom: 10%;
+        overflow-x: hidden;  
+        user-select: none;
+        cursor: grab; 
+    }
+    
+    .categorias::-webkit-scrollbar {
+        display: none; 
+    }
+    
+    .categorias {
+        -ms-overflow-style: none;  
+        scrollbar-width: none;  
+    }
+    .categoria {
+        width: 100%;
+        padding: 20px 10px;
+    }
+
+    .conteudo_inteligencia {
+        flex-direction: column;
+        padding: 10% 5%;
+    }
+
+    .conteudo_inteligencia img {
+        width: 50%;
+        padding: 20px;
+    }
+
+    .inteligencia_esquerdo, .inteligencia_direito {
+        width: 100%;
+        text-align: center;
+    }
+
+    .conteudo_sobre {
+        flex-direction: column;
+        gap: 20px;
+        padding: 6% 4%;
+    }
+
+    .sobre_direito, .sobre_esquerdo {
+        width: 100%;
+    }
+
+    .ferramentas{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        gap: 30px;
+    }
+
+    .img_sobre {
+        width: 100%;
+        padding: 5%;
+    }
+
+    .conteudo_contato {
+        flex-direction: row;
+        padding: 5% 4%;
+    }
+
+    .contato_esquerdo {
+        display: none;
+    }
+
+    .contato_direito {
+        width: 100%;
+        height: auto;
+    }
+
+    .inputs {
+        gap: 10px;
+    }
+
+    .nome_input, .telefone_input {
+        width: 100%;
+    }
+
+    .btn_contato {
+        width: 100%;
+        padding: 15px;
+        font-size: 20px;
+    }
+
+    .rodape_conteudo{
+        flex-direction: column;
+    }
+
+    .logo_rodape{
+        width: 60%;
+        padding-bottom: 15%;
+    }
+
+    .colunas{
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+    header{
+        display: flex;
+        justify-content: space-around;
+        margin: 0;
+        padding: 30px 10px;
+        gap: 180px;
+    }
+
+    header img.logo1 {
+        width: 15%;
+        justify-content: start;
+    }
+    
+    header nav {
+        width:50%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 50px;
+        font-size: 15px;
+    }    
+
+    .frase_home{
+        font-size: 27px;
+    }
+
+    .conteudo_detalhe {
+        padding: 5%;
+        gap: 20px;
+    }
+
+    .detalhe_servico {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 5%;
+    }
+
+    .categorias {
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+        padding-bottom: 10%;
+    }
+
+    .categoria {
+        width: 150px;
+        height: 80px;
+        padding: 20px 10px;
+    }
+
+    .conteudo_inteligencia {
+        flex-direction: column;
+        align-items: center;
+        padding: 5%;
+    }
+
+    .conteudo_inteligencia img {
+        width:  50%;
+        padding: 0;
+    }
+
+    .inteligencia_esquerdo, .inteligencia_direito {
+        width: 100%;
+    }
+
+    .inteligencia_direito h3 {
+        font-size: 28px;
+    }
+
+    .conteudo_sobre {
+        flex-direction: column;
+        padding: 5%;
+        gap: 30px;
+    }
+
+    .sobre_esquerdo, .sobre_direito {
+        width: 100%;
+    }
+
+    .ferramentas{
+        display: flex;
+        width: 90%;
+        gap: 30px;
+    }
+
+    .img_sobre {
+        width: 100%;
+        padding: 0;
+    }
+
+    .img_sobre img {
+        width: 150px;
+    }
+
+    .conteudo_contato {
+        flex-direction: row;
+        padding: 5%;
+    }
+
+    .contato_esquerdo{
+        width: 40%;
+    }
+
+    .endereco{
+        font-size: 12px;
+    }
+
+    .contato_direito {
+        width: 60%;
+    }
+
+    .contato_direito {
+        height: auto;
+        padding: 5%;
+    }
+
+    .inputs {
+        gap: 10px;
+    }
+
 }

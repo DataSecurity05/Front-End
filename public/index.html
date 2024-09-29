@@ -15,7 +15,7 @@
     <header>
         <img class="logo1" src="assets/logo.png" alt="Logo" id="logo">
         <nav>
-            <div class="menus">
+            <div class="menus" id="menu">
                 <a href="#home">Home</a>
                 <a href="#servicos">Serviços</a>
                 <a href="#sobre">Sobre</a>
@@ -24,6 +24,7 @@
             <a class="btn_login" href="views/login.html">Login</a>
         </nav>
     </header>
+
     <main>
         <div id="home">
             <div class="img_home">
@@ -141,11 +142,13 @@
                 </div>
                 <div class="sobre_direito">
                     <h3>Nossas ferramentas:</h3>
+                    <div class="ferramentas">
                     <div class="img_sobre"><img id="carrosel-image" src="assets/aws.png"></div>
                     <p id="carrosel-decricao">Amazon Web Services (AWS) é uma plataforma de serviços em nuvem que
                         oferece uma ampla gama de soluções, incluindo armazenamento, processamento e gerenciamento de
                         dados. AWS é conhecida por
                         sua escalabilidade, flexibilidade e segurança.</p>
+                </div>
                 </div>
             </div>
         </div>
@@ -225,7 +228,7 @@
         </div>
         <a href="#">
             <button id="botao_topo" title="Voltar ao topo">&#8679;</button>
-          </a>
+        </a>
     </main>
     <footer>
         <div class="rodape_conteudo">
@@ -311,4 +314,35 @@
     }
 
     setInterval(mudarcarrosel, 4000);
+
+    const categorias = document.querySelector('.categorias');
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+
+    categorias.addEventListener('mousedown', (e) => {
+        isDown = true;
+        categorias.classList.add('active');
+        startX = e.pageX - categorias.offsetLeft;
+        scrollLeft = categorias.scrollLeft;
+    });
+
+    categorias.addEventListener('mouseleave', () => {
+        isDown = false;
+        categorias.classList.remove('active');
+    });
+
+    categorias.addEventListener('mouseup', () => {
+        isDown = false;
+        categorias.classList.remove('active');
+    });
+
+    categorias.addEventListener('mousemove', (e) => {
+        if (!isDown) return; 
+        e.preventDefault();
+        const x = e.pageX - categorias.offsetLeft;
+        const walk = (x - startX) * 3; 
+        categorias.scrollLeft = scrollLeft - walk;
+    });
+
 </script>
