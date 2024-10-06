@@ -30,7 +30,7 @@ body {
 
 .sidebar header {
     display: flex;
-    align-items: center;
+    justify-content: center;
     height: 72px;
     padding-top: 10px;
     margin-left: 0%;
@@ -38,8 +38,8 @@ body {
 }
 
 .sidebar header img {
-    height: 44px;
-    width: 200px;
+    height: 60px;
+    width: 65px;
 }
 
 .sidebar input {
